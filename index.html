@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>YouTube仮想ブラウザ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<html>
+<head><meta charset="utf-8"><title>YouTube保存</title></head>
 <body>
-  <div class="browser">
-    <div class="toolbar">
-      <span class="icon">📺</span>
-      <input id="urlInput" type="text" placeholder="https://www.youtube.com/embed=id または動画ID">
-      <button onclick="loadVideo()">▶️ 開く</button>
-    </div>
-    <iframe id="ytFrame" src="" allowfullscreen></iframe>
-  </div>
-  <script src="script.js"></script>
+  <h1>YouTubeを動画に変換</h1>
+  <form method="POST">
+    <input name="url" type="text" placeholder="YouTube URL" required>
+    <button type="submit">保存する</button>
+  </form>
 </body>
 </html>
